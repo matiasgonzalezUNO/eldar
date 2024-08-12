@@ -7,7 +7,6 @@ import com.example.test_java_eldar.models.RequestCardEqual;
 import com.example.test_java_eldar.services.AnalyzerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,9 +19,9 @@ public class AnalyzerController {
     @Autowired
     AnalyzerService analyzerService;
 
-    @GetMapping("/hola")
+    @GetMapping("/ping")
     public String firstTest() {
-        return "Hola";
+        return "Pong";
     }
 
     @PostMapping("/analyzecredit")
